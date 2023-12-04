@@ -41,7 +41,7 @@
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
 
                     <!--old django tag: {{post.content|slice:":200" }}-->
-                    <div class="card-text" style="height: 100px; overflow:hidden; ">{{post.content}}</div><br>
+                    <div class="card-text" style="height: 100px; overflow:hidden; "><md-block>{{post.content}}</md-block></div><br>
 
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
